@@ -1,1 +1,0 @@
-# Bank-Database-System-in-Bash

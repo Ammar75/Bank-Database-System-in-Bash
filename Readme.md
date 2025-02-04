@@ -1,9 +1,10 @@
 # Bank-Database-System-in-Bash
 
-Project Overview
+## Project Overview
 
 This is a simple Bank System implemented in a bash script. It simulates a basic banking system where users can create an account, check their balance, deposit money, withdraw money, and remove their account. The system stores the bank data in a text file, allowing the script to perform basic operations like reading and modifying the account details.
-Features
+
+## Features
 
   Create a New Account: A new customer can create an account with a unique ID and an initial balance.
   Show Balance: Customers can check their current balance using their unique account ID.
@@ -12,19 +13,18 @@ Features
   Remove Customer: Customers can remove their account from the system.
   Unique ID Generation: A random ID is generated for each customer, ensuring uniqueness.
 
-Prerequisites
+## Prerequisites
 
 Before running the script, ensure that you have the following dependencies:
 
   zenity: A tool for creating GUI dialogs from the command line. It is used in this script to prompt users for inputs and display messages.
+  openssl: Necessary for adding new customers and customer authentication
+  To install the prerequisites , run the following command:
+  **sudo apt-get install -y zenity openssl**
 
-  To install zenity, run the following command:
+  ## bash: The script is written in bash, which is the default shell on most Linux distributions.
 
-  sudo apt-get install zenity
-
-  bash: The script is written in bash, which is the default shell on most Linux distributions.
-
-Script Breakdown
+## Script Breakdown
 1. Generate Random ID
 
     This function generates a random ID for a new customer by using the built-in $(( RANDOM )) command.
